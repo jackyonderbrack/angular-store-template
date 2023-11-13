@@ -1,4 +1,4 @@
-<h2>Komponent - Lista produktów</h2>
+<h2>Lista produktów</h2>
 <div class="products-wrapper">
 
     <div class="single-product-card"  *ngFor="let product of products">
@@ -9,8 +9,15 @@
             <h3>{{ product.title }}</h3>
         </div>
         <div class="product-details-wrapper">
-            <p>Ocena: {{ product.rating.rate }} / {{ product.rating.count }} ocen</p>
-            <span>{{ product.price }}</span>
+            <div class="product-ratings-wrapper">
+                <span>Ocena: {{ product.rating.rate }}</span>
+                <span>{{ product.rating.count }} ocen</span>
+            </div>
+            <div class="product-price-wrapper">
+                <a class="product-price">
+                    {{ product.price.toFixed(2) }}zł
+                </a>
+            </div>
         </div>
     </div>
 </div>

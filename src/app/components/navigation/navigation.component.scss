@@ -1,0 +1,19 @@
+.nav-button-link {
+    cursor: pointer;
+    background-color:rgba(150, 149, 148, 0.06);
+    padding: 1rem 0.6rem;
+    border-radius: 0.6rem;
+    transition: all 161ms ease-in-out;
+}
+
+.nav-button-link:hover {
+    font-weight: bold;
+    color: white;
+    background-color:rgba(70, 133, 195, 0.494);
+}
+
+.navigation-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+}

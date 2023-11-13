@@ -12,9 +12,8 @@ img {
 
 .products-wrapper {
     display: grid;
-    grid-template-columns: repeat(4, minmax(12rem, 14rem));
+    grid-template-columns: repeat(5, minmax(20rem, 22rem));
     gap: 1rem;
-   
 }
 
 .single-product-card {
@@ -24,7 +23,7 @@ img {
     text-align: left;
     align-items: center;
     justify-content: top;
-    border: 1px white solid;
+    border: 1px rgb(195, 195, 195) solid;
     border-radius: 0.7rem;
 }
 
@@ -34,6 +33,19 @@ img {
 
 .product-details-wrapper {
     display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-items: end;
+    width: 100%;
     justify-content: space-between;
-    padding: 0.3rem
+}
+
+.product-ratings-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-price {
+    cursor: pointer;
+    font-weight: bold;
 }
