@@ -7,6 +7,7 @@ import { ProductModel } from '../../models/product.model';
   selector: 'app-products-list',
   standalone: true,
   imports: [CommonModule],
+  providers: [ProductService],
   templateUrl: './products-list.component.html',
   styleUrl: './products-list.component.scss',
 })
