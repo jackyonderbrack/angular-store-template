@@ -9,14 +9,14 @@ import { LogoComponent } from './components/logo/logo.component';
   selector: 'app-root',
   standalone: true,
   imports: [
-    CommonModule, 
-    RouterOutlet, 
-    HttpClientModule, 
-    NavigationComponent, 
-    LogoComponent
+    CommonModule,
+    RouterOutlet,
+    HttpClientModule,
+    NavigationComponent,
+    LogoComponent,
   ],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
   title = 'angular-store-template';

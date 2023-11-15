@@ -8,12 +8,12 @@ import { RouterLink } from '@angular/router';
   standalone: true,
   imports: [CommonModule, RouterLink],
   templateUrl: './navigation.component.html',
-  styleUrl: './navigation.component.scss'
+  styleUrl: './navigation.component.scss',
 })
 export class NavigationComponent {
- navigationItems: NavigationModel[] = [
-  {title: "Strona główna", href: "/"},
-  {title: "Kontakt", href: "/contact"},
-  {title: "Regulamin", href: "/conditions"}
- ];
+  navigationItems: NavigationModel[] = [
+    { title: 'Strona główna', href: '/' },
+    { title: 'Kontakt', href: '/contact' },
+    { title: 'Regulamin', href: '/conditions' },
+  ];
 }
